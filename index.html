@@ -1,36 +1,61 @@
-<section id="contact" class="flex items-center justify-center min-h-screen bg-gradient-to-r from-blue-50 via-gray-100 to-indigo-50">
-    <div class="w-full max-w-md p-8 rounded-xl shadow-xl backdrop-blur-md bg-white/30">
-      <h2 class="text-5xl font-bold mb-8 text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-indigo-600 font-poppins animate__animated animate__fadeInUp">
+<section id="contact" style="display: flex; align-items: center; justify-content: center; min-height: 100vh; background: radial-gradient(circle, #1e1e2e, #141420);">
+    <div style="width: 100%; max-width: 420px; padding: 30px; border-radius: 15px; box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5); background: rgba(20, 20, 32, 0.95); text-align: center; animation: fadeIn 1.5s ease-in-out;">
+      
+      <h2 style="font-size: 36px; font-weight: bold; margin-bottom: 20px; color: #fff; text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); font-family: 'Poppins', sans-serif; animation: glowText 2s infinite alternate;">
         Contact Me
       </h2>
-      <p class="font-serif">Submit the form below to get in touch with me</p>
-      <form id="contactForm" action="https://getform.io/f/aroomkmb" method="POST">
-        <div class="mb-4">
-          <label for="name" class="block text-sm font-medium text-gray-100">Name</label>
-          <input type="text" id="name" name="name" placeholder="Enter your name" required
-            class="w-full mt-1 p-2 border border-transparent rounded-lg focus:ring-2 focus:ring-purple-400 shadow-md bg-white/70 text-gray-900">
+      
+      <p style="font-family: serif; color: #bbb;">Submit the form below to get in touch with me</p>
+      
+      <form id="contactForm" action="https://getform.io/f/aroomkmb" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
+        
+        <div style="text-align: left;">
+          <label for="name" style="display: block; font-size: 14px; font-weight: bold; color: #bbb;">Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required 
+            style="width: 100%; padding: 12px; margin-top: 5px; border: none; border-radius: 8px; background: #252538; color: white; outline: none; box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); transition: 0.3s;">
         </div>
-        <div class="mb-4">
-          <label for="email" class="block text-sm font-medium text-gray-100">Email</label>
-          <input type="email" id="email" name="email" placeholder="Enter your email" required
-            class="w-full mt-1 p-2 border border-transparent rounded-lg focus:ring-2 focus:ring-purple-400 shadow-md bg-white/70 text-gray-900">
+        
+        <div style="text-align: left;">
+          <label for="email" style="display: block; font-size: 14px; font-weight: bold; color: #bbb;">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required 
+            style="width: 100%; padding: 12px; margin-top: 5px; border: none; border-radius: 8px; background: #252538; color: white; outline: none; box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); transition: 0.3s;">
         </div>
-        <div class="mb-4">
-          <label for="phone" class="block text-sm font-medium text-gray-100">Phone</label>
-          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required pattern="[0-9]+"
-            class="w-full mt-1 p-2 border border-transparent rounded-lg focus:ring-2 focus:ring-purple-400 shadow-md bg-white/70 text-gray-900">
+        
+        <div style="text-align: left;">
+          <label for="phone" style="display: block; font-size: 14px; font-weight: bold; color: #bbb;">Phone</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required pattern="[0-9]+" 
+            style="width: 100%; padding: 12px; margin-top: 5px; border: none; border-radius: 8px; background: #252538; color: white; outline: none; box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); transition: 0.3s;">
         </div>
-        <div class="mb-4">
-          <label for="message" class="block text-sm font-medium text-gray-100">Message</label>
+        
+        <div style="text-align: left;">
+          <label for="message" style="display: block; font-size: 14px; font-weight: bold; color: #bbb;">Message</label>
           <textarea id="message" name="message" placeholder="Type your message" rows="4" required
-            class="w-full mt-1 p-2 border border-transparent rounded-lg focus:ring-2 focus:ring-purple-400 shadow-md bg-white/70 text-gray-900"></textarea>
+            style="width: 100%; padding: 12px; margin-top: 5px; border: none; border-radius: 8px; background: #252538; color: white; outline: none; box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); transition: 0.3s;"></textarea>
         </div>
-        <div>
-          <button type="submit"
-            class="w-full bg-gradient-to-r from-purple-500 to-indigo-600 text-white font-semibold py-2 px-4 rounded-full shadow-lg hover:from-purple-600 hover:to-indigo-700 focus:outline-none focus:ring-2 focus:ring-purple-400">
-            Let’s Connect
-          </button>
-        </div>
+        
+        <button type="submit" 
+          style="width: 100%; background: linear-gradient(45deg, #00f2ff, #6a00ff); color: white; font-weight: bold; padding: 14px; font-size: 16px; border: none; border-radius: 25px; cursor: pointer; box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.8); transition: 0.3s; animation: pulseGlow 1.5s infinite alternate;">
+          Let’s Connect
+        </button>
+        
       </form>
     </div>
   </section>
+  
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  
+    @keyframes glowText {
+      from { text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); }
+      to { text-shadow: 0 0 20px rgba(255, 255, 255, 1); }
+    }
+  
+    @keyframes pulseGlow {
+      from { box-shadow: 0 0 15px rgba(0, 255, 255, 0.8); }
+      to { box-shadow: 0 0 25px rgba(0, 255, 255, 1); }
+    }
+  </style>
+  
